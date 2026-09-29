@@ -15,13 +15,13 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 A simulated mid-sized organization with inconsistent endpoint visibility and noisy, low-fidelity alerts needed a reliable detection baseline. This project walks the **full detection engineering lifecycle**: risk definition → telemetry validation → attack simulation → SPL detection → false-positive testing → tuning → MITRE mapping → dashboard.
 
-> ⚠️ **Authorization:** every attack simulation was run only against self-owned, isolated lab systems for educational and portfolio purposes.
+> **Authorization:** every attack simulation was run only against self-owned, isolated lab systems for educational and portfolio purposes.
 
-## 🧪 Lab Environment
+## Lab Environment
 
 | Component | Role |
 |---|---|
@@ -30,7 +30,7 @@ A simulated mid-sized organization with inconsistent endpoint visibility and noi
 | Splunk | Indexing, search, dashboards |
 | VMware Workstation | Isolated virtual network |
 
-## 🎯 Detection Pack
+## Detection Pack
 
 | ID | Detection | MITRE ATT&CK | Data source | Status |
 |---|---|---|---|---|
@@ -55,7 +55,7 @@ Full mapping and gaps: [08_MITRE/coverage_matrix.md](08_MITRE/coverage_matrix.md
 4. **False-positive testing** — run benign activity and tune where needed (`06_Tuning`). PPID-001 and STAGE-001 were tuned.
 5. **Mapping & reporting** — MITRE matrix and consolidated dashboard (`08_MITRE`, `09_Dashboards`).
 
-## 🕳️ Known Gaps (documented, not hidden)
+## Known Gaps (documented, not hidden)
 
 - LSASS memory access (T1003.001) was not reliably visible due to Sysmon ProcessAccess filtering.
 - No coverage for Exfiltration (TA0010) or Impact (TA0040).
@@ -78,7 +78,7 @@ Full mapping and gaps: [08_MITRE/coverage_matrix.md](08_MITRE/coverage_matrix.md
 
 > The final written report is still in progress (see `00_Project/requirements.md`).
 
-## 🔐 Notes
+## Notes
 
 - The SPL examples contain the lab hostname `DESKTOP-DI2GMCC`. Replace it with your own host or a macro when reusing them.
 - The Hydra screenshot has the lab account password redacted.
