@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔎 Resilient — Advanced Detection Engineering 001
+# Resilient — Advanced Detection Engineering 001
 
 **Design, build, test, tune and document a prioritized Splunk detection pack — validated against live attack simulations.**
 
